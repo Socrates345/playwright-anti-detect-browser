@@ -1,0 +1,16 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "```\r python -m venv .venv\r .venv\\Scripts\\activate\r npm init playwright@latest\r npx playwright install?\r ```",
+  "main": "index.js",
+  "scripts": {
+    "open": "node open-browser.js"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.0",
+    "playwright": "^1.63.0"
+  }
+}
