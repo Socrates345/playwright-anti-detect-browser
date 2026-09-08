@@ -43,7 +43,7 @@ async function main() {
   // Registered before the about:blank goto below (and before any other page
   // navigates) so every document — starting with the very first one — gets
   // the fingerprint evasions from stealth.js applied before its own scripts run.
-  await context.addInitScript(applyStealth);
+  //await context.addInitScript(applyStealth); // /!\ medium won't work with stealth
 
   // Memoized promise (not a boolean guard) so every caller — the SIGINT/SIGTERM
   // handlers and the main flow's own 'close' listener — awaits the *same*

@@ -14,3 +14,6 @@ vendor/renderer, permissions) patched via `stealth.js` — see the comment at
 the top of `open-browser.js` for exactly what is and isn't covered. Close the
 window (or Ctrl+C the script) and the profile is deleted immediately —
 cookies, history, cache, everything.
+
+If necessary, comment "await context.addInitScript(applyStealth);" in openbrowser.js
+Some websites may not work properly
